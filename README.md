@@ -43,13 +43,11 @@ python 3d_object_detection.py
 ```
 
 ### 📁 File Structure
+├── README.md
 ├── 3d_object_detection.py           
 ├── Training/      
-│   ├── depthnet.py      
-│   └── frcnn_model.py    
-├── Models/    
-│   ├── NYUDEPTH.pt  
-│   └── coco2017.pt  
+│   ├── coco2017.ipynb      
+│   └── Nyudepth_training_colab.ipynb (This is colab google code)     
 └── requirements.txt  
 
 ### 🧠 Model Architecture
