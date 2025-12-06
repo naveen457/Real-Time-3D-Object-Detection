@@ -24,16 +24,24 @@ This project performs **3D-aware object detection** using a combination of monoc
 
 ## 📦 Installation
 
-### 1️⃣ Clone the Repository
+### Clone the Repository
 ```bash
 git clone https://github.com/naveen457/Real-Time-3D-Object-Detection.git
 cd Real-Time-3D-Object-Detection
 ```
-### 2️⃣ Install Dependencies
+### Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
-
+### Temporarily disables script restrictions.
+```bash
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+```
+### Create virtual environment and activate scripts
+```bash
+-3.9 -m venv 3D_object_detection_env   
+.\3D_object_detection_env\Scripts\Activate
+```
 ### ▶️ Run Demo
 ```bash
 python 3d_object_detection.py
@@ -42,7 +50,10 @@ python 3d_object_detection.py
 ### 📁 File Structure
 ├── README.md        
 ├── Object_detection.py       
-├── Depth_estimation.py       
+├── Depth_estimation.py
+├── Models/      
+│   ├── coco2017.pt      
+│   └── Nyudepth.pt 
 ├── 3d_object_detection.py               
 ├── Training/      
 │   ├── coco2017.ipynb      
