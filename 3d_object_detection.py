@@ -33,7 +33,7 @@ print("Using device:", device)
 
 # ---------------- Load Depth Model ----------------
 depth_model = DepthEstimationNet().to(device)
-depth_model.load_state_dict(torch.load("./Models/NYUDEPTH.pt", map_location=device))
+depth_model.load_state_dict(torch.load("./Models/Nyudepth.pt", map_location=device))     ##import these from the golab where you trained Nyudepth_colab.ipynb
 depth_model.eval()
 print("Depth model loaded!")
 
@@ -45,7 +45,7 @@ in_features = detector.roi_heads.box_predictor.cls_score.in_features
 detector.roi_heads.box_predictor = FastRCNNPredictor(in_features, num_classes)
 
 # Load your trained weights here
-detector.load_state_dict(torch.load("./Models/coco2017.pt", map_location="cpu"))
+detector.load_state_dict(torch.load("./Models/coco2017_1.pt", map_location="cpu"))   ##update it with latest trained model number.
 detector.eval()
 print("Object detection model loaded!")
 
