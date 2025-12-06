@@ -33,9 +33,6 @@ cd Real-Time-3D-Object-Detection
 ```bash
 pip install -r requirements.txt
 ```
-### 3️⃣ Add Pretrained Model Weights
-NYUDEPTH.pt      
-coco2017.pt
 
 ### ▶️ Run Demo
 ```bash
@@ -44,6 +41,8 @@ python 3d_object_detection.py
 
 ### 📁 File Structure
 ├── README.md
+├── Object_detection.py
+├── Depth_estimation.py
 ├── 3d_object_detection.py           
 ├── Training/      
 │   ├── coco2017.ipynb      
