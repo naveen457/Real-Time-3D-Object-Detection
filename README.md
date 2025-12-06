@@ -40,10 +40,10 @@ python 3d_object_detection.py
 ```
 
 ### 📁 File Structure
-├── README.md
-├── Object_detection.py
-├── Depth_estimation.py
-├── 3d_object_detection.py           
+├── README.md        
+├── Object_detection.py       
+├── Depth_estimation.py       
+├── 3d_object_detection.py               
 ├── Training/      
 │   ├── coco2017.ipynb      
 │   └── Nyudepth_training_colab.ipynb (This is colab google code)     
