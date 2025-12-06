@@ -6,4 +6,5 @@ pillow
 datasets
 webdataset
 matplotlib
-pycocotools-windows
+
+pycocotools
