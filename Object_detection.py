@@ -1,16 +1,3 @@
-#cd C:\Users\navee\Envs
-#
-#Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass 
-#py -3.9 -m venv 3D_object_detection_env   to chage enverion from the default verion of python to the over written version
-#.\3D_object_detection_env\Scripts\Activate
-
-#pip install torch==2.0.0 torchvision==0.15.1+cpu --extra-index-url https://download.pytorch.org/whl/cpu
-#%pip install opencv-python
-
-#%pip install numpy
-
-
-
 #To check which environment wwe are working on
 
 import sys
@@ -110,3 +97,4 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
+
